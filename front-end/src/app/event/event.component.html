@@ -1,0 +1,112 @@
+<div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('/assets/img/hbg.png');
+      height: 400px;
+     
+    "
+    >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">Explore 2022 Events</h1>
+          <h4 class="mb-3">Stay in touch with this year amazing events</h4>
+          <a class="btn btn-outline-light btn-lg" href="#!" role="button"
+          >Call to action</a
+          >
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    
+    <!-- Carousel wrapper -->
+    <!-- Carousel wrapper -->
+    <div
+    id="carouselBasicExample"
+    class="carousel slide carousel-fade"
+    data-mdb-ride="carousel"
+    >
+    <!-- Indicators -->
+    
+    <!-- Inner -->
+    
+    <!-- Controls -->
+    <button
+    class="carousel-control-prev"
+    type="button"
+    data-mdb-target="#carouselBasicExample"
+    data-mdb-slide="prev"
+    >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+    class="carousel-control-next"
+    type="button"
+    data-mdb-target="#carouselBasicExample"
+    data-mdb-slide="next"
+    >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+<!--Main layout-->
+<main class="mt-5">
+    
+<div class="container">
+<!--Section: Content-->
+
+<!--Section: Content-->
+
+
+
+<section>
+
+<div class="row">
+  <ng-container *ngFor="let event of events; ">
+<div class="col-md-6 gx-5 mb-4">
+<div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+  <img src="{{ event.image_url }}" class="img-fluid" style="width: 100%;" />
+  <a href="#!">
+    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+  </a>
+</div>
+</div>
+
+<div class="col-md-6 gx-5 mb-4">
+<h4><strong>{{ event.event_name }} </strong></h4>
+<p class="text-muted">
+  {{ event.description }} 
+</p>
+</div>
+
+</ng-container>
+</div>
+<div><hr><br></div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Section: Content-->
+
+<!--Section: Content-->
+
+<hr class="my-5" />
+
+<!--Section: Content-->
+
+<!--Section: Content-->
+</div>
+</main>

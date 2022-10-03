@@ -1,0 +1,96 @@
+<div
+class="p-5 text-center bg-image"
+style="
+  background-image: url('/assets/img/hbg.png');
+  height: 400px;
+ 
+"
+>
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="text-white">
+      <h1 class="mb-3">Explore the event shop</h1>
+      <h4 class="mb-3">Cars and Coffee 2022</h4>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Navbar -->
+<!-- Navbar -->
+
+<!-- Carousel wrapper -->
+<!-- Carousel wrapper -->
+<div
+id="carouselBasicExample"
+class="carousel slide carousel-fade"
+data-mdb-ride="carousel"
+>
+<!-- Indicators -->
+
+<!-- Inner -->
+
+<!-- Controls -->
+<button
+class="carousel-control-prev"
+type="button"
+data-mdb-target="#carouselBasicExample"
+data-mdb-slide="prev"
+>
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button
+class="carousel-control-next"
+type="button"
+data-mdb-target="#carouselBasicExample"
+data-mdb-slide="next"
+>
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>Explore the event shop!</strong></h4>
+
+        <div class="row">
+          <ng-container *ngFor="let item of items; ">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="{{item.image_url}}" class="img-fluid" style="width: 100%;height:180px;"/>
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{{ item.item_name }}</h5>
+                <p class="card-text">
+                  1 Unit / {{ item.price }}
+                </p>
+                <a class="btn btn-primary" (click)="addCart(item)">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+        
+         
+        </div>
+      </section>
+      <!--Section: Content-->
+
+    
+
+      <!--Section: Content-->
+     
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      
+      <!--Section: Content-->
+    </div>
+  </main>
